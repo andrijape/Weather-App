@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(images/bcg.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+}
+
+.container {
+    height: 70vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 45px;
+    background: url(images/container.png);
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px black;
+    opacity: 0.9;
+    color: #fff;
+    text-shadow: 3px 4px 5px black;
+}
+
+input {
+    height: 5vh;
+    width: 15vw;
+    font-family: 'Caveat', cursive;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    box-shadow: 7px 7px 7px black;
+    outline: none;
+    padding: 3px;
+}
+
+.date {
+    margin-top: -2vh;
+}
+
+.day {
+    height: 15vh;
+    width: 7vw;
+}
+
+.current-temp {
+    font-size: 15vh;
+    margin-top: -3vh;
+}
+
+.min-max {
+    font-size: 7vh;
+}
+
+.unit:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 1700px) {
+    .date {
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .min-max {
+        font-size: 5vh;
+    }
+
+    .current-temp {
+        font-size: 13vh;
+    }
+}
+
+@media(max-width: 1300px) {
+    .date {
+        word-wrap: break-word;
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .min-max {
+        font-size: 3vh;
+    }
+
+    .current-temp {
+        font-size: 10vh;
+    }
+}
